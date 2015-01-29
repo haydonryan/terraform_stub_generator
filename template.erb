@@ -9,6 +9,17 @@ networks:
 - name: cf1
   type: manual
   subnets:
+<<<<<<< HEAD
+  - range: <%= placholder_cf1_subnet_cidr %>
+    name: default_unused
+    reserved:
+    - <%= placholder_cf1_subnet_reserved_min %> - <%= placholder_cf1_subnet_reserved_max %>
+    static:
+    - <%= placholder_cf1_subnet_static_min %> - <%= placholder_cf1_subnet_static_max %>
+    gateway: <%= placholder_cf1_subnet_gateway %>
+    dns:
+    - <%= placholder_vpc_dns %>
+=======
   - range: 10.10.16.0/20
     name: default_unused
     reserved:
@@ -18,6 +29,7 @@ networks:
     gateway: 10.10.16.1
     dns:
     - 10.10.0.2
+>>>>>>> b6157f00f3c835abf0c8b9454bede9186f8135c2
     cloud_properties:
       security_groups:
       - cf
@@ -26,6 +38,17 @@ networks:
 - name: cf2
   type: manual
   subnets:
+<<<<<<< HEAD
+  - range: <%= placholder_cf2_subnet_cidr %>
+    name: default_unused
+    reserved:
+    - <%= placholder_cf2_subnet_reserved_min %> - <%= placholder_cf2_subnet_reserved_max %>
+    static:
+    - <%= placholder_cf2_subnet_static_min %> - <%= placholder_cf2_subnet_static_max %>
+    gateway: <%= placholder_cf2_subnet_gateway %>
+    dns:
+    - <%= placholder_vpc_dns %>
+=======
   - range: 10.10.80.0/20
     name: default_unused
     reserved:
@@ -35,6 +58,7 @@ networks:
     gateway: 10.10.80.1
     dns:
     - 10.10.0.2
+>>>>>>> b6157f00f3c835abf0c8b9454bede9186f8135c2
     cloud_properties:
       security_groups:
       - cf
