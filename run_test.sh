@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #anything with a T in front of it is a test value and not actual.
-aws_access_key="AKIAJEOYTESV2SSK7KUQ"
-aws_secret_key="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"
+aws_access_key=$1
+aws_secret_key=$2
 aws_key_path="~/.ssh/bosh.pem"
 aws_key_name="bosh"
 aws_region="us-east-1"
